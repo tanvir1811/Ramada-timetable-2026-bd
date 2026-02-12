@@ -2171,9 +2171,9 @@ async function fetchTimesByCoords(lat, lon) {
         const timings = result.data.timings;
 
         
-        document.getElementById("sehri1").textContent = `Sehri Ends: ${timings.Imsak}`;
+        document.getElementById("sehri1").textContent = `Sehri Ends: ${timings.Imsak} AM`;
        
-        document.getElementById("iftar1").textContent = `Iftar Starts: ${timings.Maghrib}`;
+        document.getElementById("iftar1").textContent = `Iftar Starts: ${timings.Maghrib} PM`;
 
        
      
@@ -2227,11 +2227,11 @@ async function fetchTimesByCoords1(lat, lon) {
         
 
        
-        document.getElementById("fajr1").textContent = `Fajr: ${timings.Fajr}`;
-        document.getElementById("dhuhr").textContent = `Dhuhr: ${timings.Dhuhr}`;
-        document.getElementById("asr").textContent = `Asr: ${timings.Asr}`;
-        document.getElementById("maghrib").textContent = `Maghrib: ${timings.Maghrib}`;
-        document.getElementById("isha").textContent = `Isha: ${timings.Isha}`;
+        document.getElementById("fajr1").textContent = `Fajr: ${timings.Fajr} AM`;
+        document.getElementById("dhuhr").textContent = `Dhuhr: ${timings.Dhuhr} PM`;
+        document.getElementById("asr").textContent = `Asr: ${timings.Asr} PM`;
+        document.getElementById("maghrib").textContent = `Maghrib: ${timings.Maghrib} PM`;
+        document.getElementById("isha").textContent = `Isha: ${timings.Isha} PM`;
         
         console.log("All prayer timings updated successfully.");
     } catch (err) {
