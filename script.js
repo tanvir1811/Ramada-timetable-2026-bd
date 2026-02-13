@@ -2163,7 +2163,7 @@ function err(){
 
 async function fetchTimesByCoords(lat, lon) {
     const date = new Date().toLocaleDateString('en-GB').split('/').reverse().join('-'); 
-    const url = `https://api.aladhan.com/v1/timings/${date}?latitude=${lat}&longitude=${lon}&method=2`;
+const url = `https://api.aladhan.com/v1/timings/${date}?latitude=${lat}&longitude=${lon}&method=1&school=1&tune=0,0,0,0,0,3,0,0,0`;
 
     try {
         const response = await fetch(url);
@@ -2216,7 +2216,7 @@ function err1(){
 
 async function fetchTimesByCoords1(lat, lon) {
     const date = new Date().toLocaleDateString('en-GB').split('/').reverse().join('-'); 
-    const url = `https://api.aladhan.com/v1/timings/${date}?latitude=${lat}&longitude=${lon}&method=2`;
+const url = `https://api.aladhan.com/v1/timings/${date}?latitude=${lat}&longitude=${lon}&method=1&school=1&tune=0,0,0,0,0,3,0,0,0`;
 
     try {
         const response = await fetch(url);
